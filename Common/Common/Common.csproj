@@ -7,7 +7,18 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>KZ.$(AssemblyName)</PackageId>
     <Title>KZ.Packs</Title>
+    <PackageProjectUrl>https://github.com/amirtahakz/KZ.Packs</PackageProjectUrl>
+    <Description>KZ.Packs</Description>
+    <PackageIcon>logo png.jpg</PackageIcon>
+    <RepositoryUrl>https://github.com/amirtahakz/KZ.Packs</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\OneDrive\Desktop\Documents\Files\logo png.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.4.0" />
