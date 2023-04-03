@@ -66,6 +66,24 @@ public static class DistributedCacheExtensions
         var value = JsonSerializer.Deserialize<T>(val);
         return value;
     }
+
+    public static async Task<bool> RemoveAsync<T>(this IDistributedCache cache, string key)
+    {
+        var val = cache.RemoveAsync(key);
+        if (val.IsCompletedSuccessfully)
+            return true;
+
+        return false;
+    }
+
+    public static async Task<bool> RemoveAsync<T>(this IDistributedCache cache, string key, CacheOptions options)
+    {
+        var val = cache.RemoveAsync(key);
+        if (val.IsCompletedSuccessfully)
+            return true;
+
+        return false;
+    }
 }
 
 public class CacheOptions
