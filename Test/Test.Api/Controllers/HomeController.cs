@@ -2,6 +2,7 @@
 using Common.Application;
 using Common.Domain;
 using Common.Domain.Repository;
+using Common.Infrastructure.Repository;
 using Microsoft.AspNetCore.Mvc;
 using ILogger = Amazon.Runtime.Internal.Util.ILogger;
 
@@ -23,7 +24,7 @@ namespace Test.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            _repository.AddAsync(new Test()
+            _repository.InsertAsync(new Test()
             {
                 Title = "rtrtr",
                 Cost = 5000
@@ -39,16 +40,14 @@ namespace Test.Api.Controllers
         public int Cost { get; set; }
     }
 
-    public class TestRepository : DapperBaseRepository<Test> , ITestRepository
+    public class TestRepository : BaseDapperRepository<Test> , ITestRepository
     {
         public TestRepository(IConfiguration configuration) : base(configuration)
         {
         }
     }
 
-    public interface ITestRepository : IDapperBaseRepository<Test>
-    {
-    }
+    public interface ITestRepository : IBaseDapperRepository<Test>{}
 
 
 

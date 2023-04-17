@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Common.Infrastructure.Repository;
 
-public  class BaseRepository<T, TContext> : IBaseRepository<T>
+public class BaseEntityFrameworkRepository<T, TContext> : IBaseEntityFrameworkRepository<T>
     where TContext : DbContext where T : BaseAggregateRoot
 {
     protected readonly TContext Context;
-    public BaseRepository(TContext context)
+    public BaseEntityFrameworkRepository(TContext context)
     {
         Context = context;
     }

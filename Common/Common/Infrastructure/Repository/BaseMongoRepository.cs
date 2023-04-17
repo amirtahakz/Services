@@ -5,10 +5,10 @@ using MongoDB.Driver;
 
 namespace Common.Infrastructure.Repository;
 
-public class MongoRepository<TEntity, TContext> : IMongoRepository<TEntity> where TEntity : BaseAggregateRoot where TContext : BaseMongoContext
+public class BaseMongoRepository<TEntity, TContext> : IBaseMongoRepository<TEntity> where TEntity : BaseAggregateRoot where TContext : BaseMongoContext
 {
     protected readonly IMongoCollection<TEntity> Collection;
-    public MongoRepository(TContext context)
+    public BaseMongoRepository(TContext context)
     {
         var dataBase = context.GetDataBase();
         Collection = dataBase.GetCollection<TEntity>(GenerateCollectionName(typeof(TEntity).Name));

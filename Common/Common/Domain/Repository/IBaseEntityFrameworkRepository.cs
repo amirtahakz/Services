@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Common.Domain.Repository
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IBaseEntityFrameworkRepository<T> where T : BaseEntity
     {
         Task<T?> GetAsync(Guid id);
 
@@ -19,8 +19,6 @@ namespace Common.Domain.Repository
         Task AddRange(ICollection<T> entities);
 
         void Update(T entity);
-
-
         Task<int> Save();
 
         Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);

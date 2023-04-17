@@ -1,27 +1,36 @@
+using Common.Domain.Repository;
+using Common.Infrastructure.Repository;
+using MongoDB.Driver.Core.Configuration;
 using Test.Api.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+
+
 
 // Add services to the container.
+services.AddControllers();
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 
+services.AddDistributedMemoryCache();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDistributedMemoryCache();
-
-builder.Services.AddSession(options =>
+services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(10);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
 
-builder.Services.AddTransient<ITestRepository , TestRepository>();
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//services.AddTransient(_ => new DapperContext(connectionString));
+services.AddTransient<ITestRepository , TestRepository>();
+
+
+//Build & Run
 var app = builder.Build();
 
 

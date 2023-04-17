@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Domain.Repository
 {
-    public interface IMongoRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseMongoRepository<TEntity> where TEntity : BaseEntity
     {
         Task Delete(Guid id);
         Task<TEntity?> GetById(Guid id);
