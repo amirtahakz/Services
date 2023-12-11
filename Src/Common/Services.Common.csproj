@@ -10,7 +10,7 @@
     <PackageProjectUrl></PackageProjectUrl>
     <Description></Description>
     <RepositoryUrl></RepositoryUrl>
-    <Version>7.0.0</Version>
+    <Version>7.0.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Authors>AmirTahaKz</Authors>
   </PropertyGroup>
