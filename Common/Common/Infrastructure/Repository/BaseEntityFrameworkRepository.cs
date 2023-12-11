@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
-using Common.Domain;
-using Common.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
+using Services.Common.Domain;
+using Services.Common.Domain.Repository;
 
-namespace Common.Infrastructure.Repository;
+namespace Services.Common.Infrastructure.Repository;
 
 public class BaseEntityFrameworkRepository<T, TContext> : IBaseEntityFrameworkRepository<T>
     where TContext : DbContext where T : BaseAggregateRoot

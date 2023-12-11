@@ -1,13 +1,14 @@
 ﻿using System.Net;
-using Common.Application.Validation;
-using Common.Domain.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Services.Common.Application.Validation;
+using Services.Common.AspNetCore;
+using Services.Common.Domain.Exceptions;
 
-namespace Common.AspNetCore.Middlewares;
+namespace Services.Common.AspNetCore.Middlewares;
 
 public static class ApiCustomExceptionHandlerMiddlewareExtensions
 {

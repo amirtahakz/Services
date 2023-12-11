@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.Validation.CustomValidation.IFormFile
+namespace Services.Common.Application.Validation.CustomValidation.IFormFile
 {
     public class FileTypeAttribute : ValidationAttribute, IClientModelValidator
     {

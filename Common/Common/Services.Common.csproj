@@ -5,13 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>KZ.$(AssemblyName)</PackageId>
-    <Title>KZ.Packs</Title>
-    <PackageProjectUrl>https://github.com/amirtahakz/KZ.Packs</PackageProjectUrl>
-    <Description>KZ.Packs</Description>
-    <RepositoryUrl>https://github.com/amirtahakz/KZ.Packs</RepositoryUrl>
-    <Version>1.0.1</Version>
+    <PackageId>Global.$(AssemblyName)</PackageId>
+    <Title>Services.Common</Title>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Description></Description>
+    <RepositoryUrl></RepositoryUrl>
+    <Version>7.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Authors>AmirTahaKz</Authors>
   </PropertyGroup>
 
   <ItemGroup>

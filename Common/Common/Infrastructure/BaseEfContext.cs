@@ -1,8 +1,8 @@
-﻿using Common.Domain;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Services.Common.Domain;
 
-namespace Common.Infrastructure
+namespace Services.Common.Infrastructure
 {
     public class BaseEfContext<T> : DbContext where T : DbContext
     {

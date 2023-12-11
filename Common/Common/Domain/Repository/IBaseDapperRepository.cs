@@ -7,7 +7,7 @@ using System.Text;
 using Dapper;
 using Microsoft.Data.SqlClient;
 
-namespace Common.Domain.Repository;
+namespace Services.Common.Domain.Repository;
 
 public interface IBaseDapperRepository<T>
 {

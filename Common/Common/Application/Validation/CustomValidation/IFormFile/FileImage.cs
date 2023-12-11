@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace Common.Application.Validation.CustomValidation.IFormFile
+namespace Services.Common.Application.Validation.CustomValidation.IFormFile
 {
     public class FileImageAttribute : ValidationAttribute, IClientModelValidator
     {

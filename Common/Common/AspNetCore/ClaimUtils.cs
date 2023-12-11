@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-namespace Common.AspNetCore;
+namespace Services.Common.AspNetCore;
 
 public static class ClaimUtils
 {

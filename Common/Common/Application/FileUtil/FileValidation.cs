@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.FileUtil
+namespace Services.Common.Application.FileUtil
 {
     public static class FileValidation
     {

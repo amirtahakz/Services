@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Services.Common.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Domain.Repository
+namespace Services.Common.Domain.Repository
 {
     public interface IBaseEntityFrameworkRepository<T> where T : BaseEntity
     {

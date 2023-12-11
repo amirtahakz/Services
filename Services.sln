@@ -5,15 +5,15 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E4EA1D5D-EA1B-43B7-A7EC-2642987EFA47}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common\Common.csproj", "{E8958D88-B6D4-4661-9259-5E5426A795F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Common", "Common\Common\Services.Common.csproj", "{E8958D88-B6D4-4661-9259-5E5426A795F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{24C5C47C-DBC8-45D5-B956-18901C5ACC64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Console", "Test\Test.Console\Test.Console.csproj", "{CA5B3F2F-3D81-4587-9E6C-37E27BD9AD08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Console", "Test\Test.Console\Services.Console.csproj", "{CA5B3F2F-3D81-4587-9E6C-37E27BD9AD08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Api", "Test\Test.Api\Test.Api.csproj", "{3B0B684C-0AA0-4584-BD90-1C9D658EBDD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Api", "Test\Test.Api\Services.Api.csproj", "{3B0B684C-0AA0-4584-BD90-1C9D658EBDD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Client", "Test\Test.Client\Test.Client.csproj", "{A49289A6-7936-4917-B8F6-53A502ECC74D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.Client", "Test\Test.Client\Services.Client.csproj", "{A49289A6-7936-4917-B8F6-53A502ECC74D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

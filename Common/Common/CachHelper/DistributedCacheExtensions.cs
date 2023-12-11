@@ -1,9 +1,8 @@
 ﻿using System.Text;
 using System.Text.Json;
-using Common.CachHelper;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace Common.CachHelper;
+namespace Services.Common.CachHelper;
 
 
 public static class DistributedCacheExtensions

@@ -1,4 +1,4 @@
-﻿namespace Common.AspNetCore;
+﻿namespace Services.Common.AspNetCore;
 
 public class ApiResult
 {

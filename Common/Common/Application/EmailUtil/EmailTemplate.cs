@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.EmailUtil
+namespace Services.Common.Application.EmailUtil
 {
     public static class EmailTemplate
     {

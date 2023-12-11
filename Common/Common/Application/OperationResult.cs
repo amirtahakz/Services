@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application
+namespace Services.Common.Application
 {
     public class OperationResult<TData>
     {
@@ -30,7 +30,7 @@ namespace Common.Application
             {
                 Status = OperationResultStatus.NotFound,
                 Title = "NotFound",
-                Data = default(TData),
+                Data = default,
             };
         }
         public static OperationResult<TData> Error(string message = ErrorMessage)
@@ -39,7 +39,7 @@ namespace Common.Application
             {
                 Status = OperationResultStatus.Error,
                 Title = "مشکلی در عملیات رخ داده",
-                Data = default(TData),
+                Data = default,
                 Message = message
             };
         }

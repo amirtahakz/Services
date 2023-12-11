@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Common.Infrastructure.MediatR;
+namespace Services.Common.Infrastructure.MediatR;
 
 public interface ICustomPublisher
 {

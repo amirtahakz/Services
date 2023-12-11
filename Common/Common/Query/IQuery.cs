@@ -1,7 +1,7 @@
-﻿using Common.Query.Filter;
-using MediatR;
+﻿using MediatR;
+using Services.Common.Query.Filter;
 
-namespace Common.Query;
+namespace Services.Common.Query;
 
 public interface IQuery<TResponse> : IRequest<TResponse> where TResponse : class?
 {

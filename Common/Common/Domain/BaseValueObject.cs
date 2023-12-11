@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Domain
+namespace Services.Common.Domain
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class IgnoreMemberAttribute : Attribute

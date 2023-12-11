@@ -1,7 +1,7 @@
-using Common.Domain.Repository;
-using Common.Infrastructure.Repository;
+using Services.Common.Domain.Repository;
+using Services.Common.Infrastructure.Repository;
 using MongoDB.Driver.Core.Configuration;
-using Test.Api.Controllers;
+using Services.Api.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;

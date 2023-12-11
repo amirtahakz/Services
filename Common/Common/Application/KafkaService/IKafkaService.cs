@@ -1,7 +1,7 @@
 ﻿using Confluent.Kafka;
 using static Confluent.Kafka.ConfigPropertyNames;
 
-namespace Common.Application.KafkaService
+namespace Services.Common.Application.KafkaService
 {
     public interface IKafkaService
     {

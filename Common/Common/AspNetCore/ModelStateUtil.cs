@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Common.AspNetCore;
+namespace Services.Common.AspNetCore;
 
 public class ModelStateUtil
 {

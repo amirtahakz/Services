@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Common.Application.KafkaService
+namespace Services.Common.Application.KafkaService
 {
     public static class KafkaBootstrapper
     {

@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
-using Common.Domain;
-using Common.Domain.Repository;
 using MongoDB.Driver;
+using Services.Common.Domain;
+using Services.Common.Domain.Repository;
 
-namespace Common.Infrastructure.Repository;
+namespace Services.Common.Infrastructure.Repository;
 
 public class BaseMongoRepository<TEntity, TContext> : IBaseMongoRepository<TEntity> where TEntity : BaseAggregateRoot where TContext : BaseMongoContext
 {

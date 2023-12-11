@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.FileUtil.Interfaces
+namespace Services.Common.Application.FileUtil.Interfaces
 {
     public interface IFileService
     {

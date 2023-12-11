@@ -1,12 +1,13 @@
-﻿using Common.Domain.Exceptions;
-using Common.Domain.Utils;
+﻿using Services.Common.Domain.Exceptions;
+using Services.Common.Domain;
+using Services.Common.Domain.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Domain.ValueObjects
+namespace Services.Common.Domain.ValueObjects
 {
     public class PhoneNumber : BaseValueObject
     {

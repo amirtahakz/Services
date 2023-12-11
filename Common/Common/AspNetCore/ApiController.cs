@@ -1,9 +1,9 @@
 ﻿using System.Net;
-using Common.Application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Services.Common.Application;
 
-namespace Common.AspNetCore;
+namespace Services.Common.AspNetCore;
 
 [Route("api/[controller]")]
 [ApiController]

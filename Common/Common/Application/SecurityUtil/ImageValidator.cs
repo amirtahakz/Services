@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.SecurityUtil
+namespace Services.Common.Application.SecurityUtil
 {
     public static class ImageValidator
     {

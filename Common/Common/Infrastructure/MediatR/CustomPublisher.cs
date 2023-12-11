@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Common.Infrastructure.MediatR;
+namespace Services.Common.Infrastructure.MediatR;
 
 public class CustomPublisher : ICustomPublisher
 {
@@ -21,12 +21,12 @@ public class CustomPublisher : ICustomPublisher
 
     public Task Publish<TNotification>(TNotification notification)
     {
-        return Publish(notification, DefaultStrategy, default(CancellationToken));
+        return Publish(notification, DefaultStrategy, default);
     }
 
     public Task Publish<TNotification>(TNotification notification, PublishStrategy strategy)
     {
-        return Publish(notification, strategy, default(CancellationToken));
+        return Publish(notification, strategy, default);
     }
 
     public Task Publish<TNotification>(TNotification notification, CancellationToken cancellationToken)

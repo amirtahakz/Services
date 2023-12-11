@@ -1,13 +1,13 @@
 ﻿using Amazon.Runtime.Internal.Util;
-using Common.Application;
-using Common.Domain;
-using Common.Domain.Repository;
-using Common.Infrastructure.Repository;
+using Services.Common.Application;
 using Microsoft.AspNetCore.Mvc;
+using Services.Common.Domain;
+using Services.Common.Domain.Repository;
+using Services.Common.Infrastructure.Repository;
 using ILogger = Amazon.Runtime.Internal.Util.ILogger;
 
 
-namespace Test.Api.Controllers
+namespace Services.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -40,14 +40,14 @@ namespace Test.Api.Controllers
         public int Cost { get; set; }
     }
 
-    public class TestRepository : BaseDapperRepository<Test> , ITestRepository
+    public class TestRepository : BaseDapperRepository<Test>, ITestRepository
     {
         public TestRepository(IConfiguration configuration) : base(configuration)
         {
         }
     }
 
-    public interface ITestRepository : IBaseDapperRepository<Test>{}
+    public interface ITestRepository : IBaseDapperRepository<Test> { }
 
 
 

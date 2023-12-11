@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace Common.Infrastructure.MediatR;
+namespace Services.Common.Infrastructure.MediatR;
 
-public class CustomMediator:Mediator
+public class CustomMediator : Mediator
 {
     private readonly Func<IEnumerable<Func<INotification, CancellationToken, Task>>, INotification, CancellationToken, Task> _publish;
 

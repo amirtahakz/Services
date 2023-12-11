@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Ganss.Xss;
 
-namespace Common.Application.SecurityUtil
+namespace Services.Common.Application.SecurityUtil
 {
     public static class XssSecurity
     {

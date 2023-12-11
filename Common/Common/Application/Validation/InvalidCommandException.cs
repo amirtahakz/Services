@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.Validation
+namespace Services.Common.Application.Validation
 {
     public class InvalidCommandException : Exception
     {

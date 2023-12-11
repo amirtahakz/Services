@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Common.Application;
+namespace Services.Common.Application;
 
 public static class CaptchaGenerator
 {
@@ -28,7 +28,7 @@ public static class CaptchaGenerator
         return sb.ToString();
     }
 
-    public static CaptchaResult GenerateCaptchaImage(string captchaCode , int width = 100, int height = 36)
+    public static CaptchaResult GenerateCaptchaImage(string captchaCode, int width = 100, int height = 36)
     {
         using (Bitmap baseMap = new Bitmap(width, height))
         using (Graphics graph = Graphics.FromImage(baseMap))

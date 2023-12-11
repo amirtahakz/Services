@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application.SecurityUtil
+namespace Services.Common.Application.SecurityUtil
 {
     public class Sha256Hasher
     {

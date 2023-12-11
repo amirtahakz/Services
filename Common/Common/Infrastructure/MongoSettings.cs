@@ -1,4 +1,4 @@
-﻿namespace Common.Infrastructure
+﻿namespace Services.Common.Infrastructure
 {
     public class MongoSettings
     {

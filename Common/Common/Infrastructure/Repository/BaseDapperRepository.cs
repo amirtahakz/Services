@@ -6,13 +6,13 @@ using System.Data;
 using System.Reflection;
 using System.Text;
 using AngleSharp;
-using Common.Domain.Repository;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Services.Common.Domain.Repository;
 using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
-namespace Common.Infrastructure.Repository;
+namespace Services.Common.Infrastructure.Repository;
 
 public abstract class BaseDapperRepository<T> : IBaseDapperRepository<T> where T : class
 {

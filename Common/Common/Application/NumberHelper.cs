@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Application
+namespace Services.Common.Application
 {
     public static class NumberHelper
     {

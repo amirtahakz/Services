@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Encoder = System.Drawing.Imaging.Encoder;
 
-namespace Common.Application
+namespace Services.Common.Application
 {
     public static class ImageConvertor
     {
@@ -57,10 +57,10 @@ namespace Common.Application
 
                 graphic_of_DrawArea.DrawImage(source_Bitmap, 0, 0, new_Width, new_Height);
 
-                using (var output = System.IO.File.Open(output_Image_Path, FileMode.Create))
+                using (var output = File.Open(output_Image_Path, FileMode.Create))
                 {
 
-                    var qualityParamId = System.Drawing.Imaging.Encoder.Quality;
+                    var qualityParamId = Encoder.Quality;
 
                     var encoderParameters = new EncoderParameters(1);
 

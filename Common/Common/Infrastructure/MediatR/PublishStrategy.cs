@@ -1,4 +1,4 @@
-﻿namespace Common.Infrastructure.MediatR;
+﻿namespace Services.Common.Infrastructure.MediatR;
 
 public enum PublishStrategy
 {

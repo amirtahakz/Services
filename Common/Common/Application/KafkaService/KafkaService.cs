@@ -1,7 +1,7 @@
 ﻿using Confluent.Kafka;
 using Newtonsoft.Json;
 
-namespace Common.Application.KafkaService
+namespace Services.Common.Application.KafkaService
 {
     public class KafkaService : IKafkaService
     {

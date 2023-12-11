@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Domain.ValueObjects
+namespace Services.Common.Domain.ValueObjects
 {
     public class SeoData : BaseValueObject
     {
